@@ -4,6 +4,10 @@ function createStore(candyReducer){
     return state
   }
   
+  function dispatch(action){
+    
+  }
+  
   return {
     getState,
     dispatch

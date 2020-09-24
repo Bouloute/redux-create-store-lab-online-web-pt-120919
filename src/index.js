@@ -10,8 +10,6 @@ function createStore(candyReducer){
     render()
   }
   
-  dispatch({type: "default"})
-  
   return {
     getState,
     dispatch
@@ -36,6 +34,7 @@ function render() {
   }
 };
 
+dispatch({type: "default"})
 let store = createStore(candyReducer)
 
 // use your createStore function and the functions provided here to create a store

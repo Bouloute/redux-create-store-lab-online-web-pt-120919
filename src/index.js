@@ -1,5 +1,13 @@
 function createStore(candyReducer){
   
+  function getState(){
+    return state
+  }
+  
+  return {
+    getState,
+    dispatch
+  }
 }
 
 function candyReducer(state = [], action) {
